@@ -15,7 +15,6 @@ import com.vaadin.flow.component.grid.Grid.Column;
 import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.data.provider.ListDataProvider;
 import com.vaadin.flow.data.renderer.ComponentRenderer;
-import com.vaadin.flow.function.ValueProvider;
 import com.vaadin.flow.router.RouterLink;
 
 import elemental.json.JsonObject;
@@ -23,6 +22,7 @@ import elemental.json.impl.JsonUtil;
 
 public class ApioJsonRenderer implements ApioRenderer {
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@Override
 	public void renderJson(String json, HasComponents component) {
 		Gson gson = new Gson();
@@ -81,6 +81,8 @@ public class ApioJsonRenderer implements ApioRenderer {
 	}
 
 	class CustomDataProvider extends ListDataProvider<Map<String, Object>> {
+
+		private static final long serialVersionUID = 1L;
 
 		public CustomDataProvider(Collection<Map<String, Object>> items) {
 			super(items);

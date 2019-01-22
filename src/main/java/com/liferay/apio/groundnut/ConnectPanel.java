@@ -14,6 +14,8 @@ import com.vaadin.flow.shared.Registration;
 
 public class ConnectPanel extends HorizontalLayout {
 
+	private static final long serialVersionUID = 1L;
+
 	public ConnectPanel() {
 		setDefaultVerticalComponentAlignment(Alignment.BASELINE);
 
@@ -65,6 +67,8 @@ public class ConnectPanel extends HorizontalLayout {
     }
 	
 	public class ConnectEvent extends ComponentEvent<ConnectPanel> {
+
+		private static final long serialVersionUID = 1L;
 
 		private String entryPointResponse;
 		

@@ -19,6 +19,8 @@ import com.vaadin.flow.router.WildcardParameter;
 @Route(value = "main", layout = MainLayout.class)
 public class MainScopeView extends VerticalLayout implements HasUrlParameter<String> {
 
+	private static final long serialVersionUID = 1L;
+
 	private VerticalLayout appPage = new VerticalLayout();
 	private VerticalLayout restPage = new VerticalLayout();
 

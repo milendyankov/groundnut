@@ -62,6 +62,8 @@ public class ApioJsonLdRenderer implements ApioRenderer {
 
 	class CustomDataProvider extends ListDataProvider<Map<String, Object>> {
 
+		private static final long serialVersionUID = 1L;
+
 		public CustomDataProvider(Collection<Map<String, Object>> items) {
 			super(items);
 		}

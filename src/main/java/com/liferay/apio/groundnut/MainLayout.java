@@ -1,14 +1,11 @@
 package com.liferay.apio.groundnut;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 import java.util.Objects;
 
 import com.liferay.apio.groundnut.ConnectPanel.ConnectEvent;
 import com.vaadin.flow.component.ComponentEventListener;
 import com.vaadin.flow.component.HasElement;
 import com.vaadin.flow.component.dependency.StyleSheet;
-import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.RouterLayout;
@@ -16,13 +13,12 @@ import com.vaadin.flow.server.PWA;
 import com.vaadin.flow.theme.Theme;
 import com.vaadin.flow.theme.lumo.Lumo;
 
-import elemental.json.JsonObject;
-import elemental.json.impl.JsonUtil;
-
 @Theme(value = Lumo.class)
 @PWA(name = "Apio Groundnut", shortName = "Apio Groundnut")
 @StyleSheet("css/styles.css")
 public class MainLayout extends VerticalLayout implements RouterLayout, ComponentEventListener<ConnectEvent> {
+
+	private static final long serialVersionUID = 1L;
 
 	private MenuPanel menu;
 

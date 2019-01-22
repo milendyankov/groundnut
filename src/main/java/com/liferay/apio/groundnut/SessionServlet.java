@@ -14,7 +14,9 @@ import com.vaadin.flow.server.VaadinServlet;
 public class SessionServlet extends VaadinServlet
     implements SessionInitListener, SessionDestroyListener {
 
-    @Override
+	private static final long serialVersionUID = 1L;
+
+	@Override
     protected void servletInitialized() throws ServletException {
         super.servletInitialized();
         getService().addSessionInitListener(this);

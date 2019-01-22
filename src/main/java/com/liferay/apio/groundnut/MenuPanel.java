@@ -7,6 +7,8 @@ import com.vaadin.flow.router.RouterLink;
 
 public class MenuPanel extends VerticalLayout {
 
+	private static final long serialVersionUID = 1L;
+
 	public MenuPanel() {
 		setClassName("menu-bar");
 		setWidth(null);

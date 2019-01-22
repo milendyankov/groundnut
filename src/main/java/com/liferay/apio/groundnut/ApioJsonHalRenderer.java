@@ -3,17 +3,12 @@ package com.liferay.apio.groundnut;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.Collection;
-import java.util.List;
 import java.util.Map;
 
-import com.google.gson.Gson;
 import com.vaadin.flow.component.HasComponents;
-import com.vaadin.flow.component.grid.Grid;
-import com.vaadin.flow.component.grid.Grid.Column;
 import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.data.provider.ListDataProvider;
-import com.vaadin.flow.data.renderer.TemplateRenderer;
 
 import elemental.json.JsonObject;
 import elemental.json.impl.JsonUtil;
@@ -65,6 +60,8 @@ public class ApioJsonHalRenderer implements ApioRenderer {
 	}
 
 	class CustomDataProvider extends ListDataProvider<Map<String, Object>> {
+
+		private static final long serialVersionUID = 1L;
 
 		public CustomDataProvider(Collection<Map<String, Object>> items) {
 			super(items);
