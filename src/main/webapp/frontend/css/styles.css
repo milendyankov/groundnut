@@ -1,0 +1,15 @@
+.main-layout {
+	border-top: 1px solid silver;  
+}
+
+.content-layout {
+	border-left: 1px solid silver;  
+}
+
+.menu-bar {
+	width: 200px;
+}
+
+.v-textarea { 
+	overflow-y: auto ! important;
+}
